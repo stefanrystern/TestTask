@@ -1,0 +1,23 @@
+ARVATO TEST TAST
+
+REQUIREMENTS:
+
+maven 3.3.3 or greater
+Google Chrome
+
+When using selenium server then Chrome and preconfigured chromedriver
+
+USAGE:
+
+run mvn clean test surefire-report:report-only
+
+Optional if wanting to run on selenium server run : mvn clean test surefire-report:report-only -DseleniumHub=YOURURLHERE
+Where replacing YOURURLHERE with a valid selenium server hub location
+
+TEST COVERAGE:
+
+Checking header, footer and content buttons.
+
+LIMITATIONS:
+
+Currently using only one thread and hard coded to use only chrome
